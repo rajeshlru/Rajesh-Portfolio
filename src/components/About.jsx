@@ -254,6 +254,7 @@ const About = () => {
                       Bachelor's in Computer Science & Engineering (Data
                       Science)
                     </div>
+                    <div className="text-end text-red-400">9.08</div>
                   </div>
 
                   <div className="relative my-4 sm:my-6">
