@@ -190,7 +190,7 @@ const About = () => {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24 max-w-7xl mx-auto w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 px-4 sm:px-6 md:px-10 lg:px-16 xl:px-0 max-w-7xl mx-auto w-full overflow-x-hidden">
             <div className="space-y-8">
               <motion.div
                 initial={{ opacity: 0, x: -50 }}
