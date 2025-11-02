@@ -248,13 +248,13 @@ const About = () => {
                       <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse"></div>
                       <div className="text-gray-400 text-xs sm:text-sm font-medium">
                         Education
-                      </div>
+                      </div>{" "}
                     </div>
+
                     <div className="text-white font-semibold pl-4 sm:pl-5 border-l-2 border-purple-400/30 hover:border-purple-400 transition-all duration-300">
                       Bachelor's in Computer Science & Engineering (Data
                       Science)
                     </div>
-                    <div className="text-end text-red-400">9.08</div>
                   </div>
 
                   <div className="relative my-4 sm:my-6">
@@ -300,10 +300,16 @@ const About = () => {
                     <div className="text-cyan-400 text-xs sm:text-sm font-semibold">
                       2024 - 2028
                     </div>
-                    <div className="text-white font-bold">
-                      Rajeev Gandhi Memorial College of Engineering and
-                      Technology
+                    <div className="flex items-center justify-between mb-1.5 sm:mb-2">
+                      <div className="text-white font-bold">
+                        Rajeev Gandhi Memorial College of Engineering and
+                        Technology
+                      </div>
+                      <div className="text-red-400 ml-4 flex-shrink-0">
+                        GPA: 9.0/10
+                      </div>
                     </div>
+
                     <div className="text-gray-400">
                       Bachelor's Degree in Computer Science & Engineering (Data
                       Science)
@@ -317,13 +323,24 @@ const About = () => {
                     transition={{ delay: 0.2 }}
                     className="border-l-2 border-blue-400 pl-3 sm:pl-4"
                   >
-                    <div className="text-blue-400 text-xs sm:text-sm font-semibold">
-                      2022 - 2024
+                    <div className="mb-3">
+                      <div className="flex items-center justify-between">
+                        <div className="flex flex-col">
+                          <div className="text-blue-400 text-xs sm:text-sm font-semibold">
+                            2022 - 2024
+                          </div>
+                          <div className="text-white font-bold">
+                            Raos Junior College - Nandyal
+                          </div>
+                          <div className="text-gray-400 text-xs sm:text-sm">
+                            Intermediate Education
+                          </div>
+                        </div>
+                        <div className="text-red-400 font-semibold text-sm sm:text-base flex-shrink-0 ml-4">
+                          94%
+                        </div>
+                      </div>
                     </div>
-                    <div className="text-white font-bold">
-                      Raos Junior College - Nandyal
-                    </div>
-                    <div className="text-gray-400">Intermediate Education</div>
                   </motion.div>
 
                   <motion.div
@@ -333,14 +350,23 @@ const About = () => {
                     transition={{ delay: 0.3 }}
                     className="border-l-2 border-green-400 pl-3 sm:pl-4"
                   >
-                    <div className="text-green-400 text-xs sm:text-sm font-semibold">
-                      2022
-                    </div>
-                    <div className="text-white font-bold">
-                      Sri Guru Raja English Medium High School
-                    </div>
-                    <div className="text-gray-400">
-                      Secondary School Certificate
+                    <div className="mb-3">
+                      <div className="flex items-center justify-between">
+                        <div className="flex flex-col">
+                          <div className="text-green-400 text-xs sm:text-sm font-semibold">
+                            2022
+                          </div>
+                          <div className="text-white font-bold">
+                            Sri Guru Raja English Medium High School
+                          </div>
+                          <div className="text-gray-400 text-xs sm:text-sm">
+                            Secondary School Certificate
+                          </div>
+                        </div>
+                        <div className="text-red-400 font-semibold text-sm sm:text-base flex-shrink-0 ml-4">
+                          95%
+                        </div>
+                      </div>
                     </div>
                   </motion.div>
                 </div>

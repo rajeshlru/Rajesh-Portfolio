@@ -145,7 +145,7 @@ const Home = () => {
                     </Link>
 
                     <a
-                      href="https://drive.google.com/file/d/1nRHPybL8zXtSq-n9_mYbxRI9GFUckFf/view?usp=drive_link"
+                      href="https://drive.google.com/file/d/1nRHPybL8zXtSq-n9_mYbxRI9GFUckFfF/view?usp=drive_link"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="group relative bg-white/5 backdrop-blur-sm px-8 py-3.5 rounded-lg font-medium text-white transition-all duration-400 hover:bg-white/10 border border-white/20 hover:border-white/30 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
