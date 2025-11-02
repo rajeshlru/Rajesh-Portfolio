@@ -174,16 +174,16 @@ This message was sent from your portfolio contact form.`;
           </motion.p>
         </motion.div>
 
-        <div className="max-w-6xl mx-auto">
+        <div className="w-full overflow-x-hidden px-4 sm:px-6 md:px-8 lg:px-12 max-w-7xl mx-auto">
           <motion.div
             variants={containerVariants}
             initial="hidden"
             animate="visible"
-            className="grid lg:grid-cols-2 gap-12"
+            className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12"
           >
             <div className="space-y-8">
               <motion.div variants={itemVariants}>
-                <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+                <h2 className="text-3xl sm:text-4xl font-bold mb-8 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent text-center sm:text-left">
                   Get In Touch
                 </h2>
                 <div className="space-y-6">
@@ -195,8 +195,8 @@ This message was sent from your portfolio contact form.`;
                       className="group cursor-pointer"
                       onClick={item.action}
                     >
-                      <div className="bg-gray-900/80 backdrop-blur-xl rounded-3xl border border-white/10 p-6 shadow-2xl transition-all duration-300 group-hover:border-white/20">
-                        <div className="flex items-center justify-between">
+                      <div className="bg-gray-900/90 backdrop-blur-lg sm:backdrop-blur-xl rounded-3xl border border-white/10 p-5 sm:p-6 md:p-8 shadow-2xl transition-all duration-300 group-hover:border-white/20">
+                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                           <div className="flex items-center space-x-4">
                             <div
                               className={`bg-gradient-to-br ${item.color} rounded-2xl p-4 group-hover:scale-110 transition-transform duration-300`}
@@ -207,7 +207,7 @@ This message was sent from your portfolio contact form.`;
                               <div className="text-gray-400 text-sm font-medium">
                                 {item.label}
                               </div>
-                              <div className="text-white font-semibold text-lg">
+                              <div className="text-white font-semibold text-lg break-words">
                                 {item.value}
                               </div>
                             </div>
@@ -220,7 +220,7 @@ This message was sent from your portfolio contact form.`;
                                 e.stopPropagation();
                                 copyEmailToClipboard();
                               }}
-                              className="bg-white/10 hover:bg-white/20 rounded-xl px-4 py-2 text-sm font-medium transition-all duration-300"
+                              className="bg-white/10 hover:bg-white/20 rounded-xl px-4 py-2 text-sm font-medium transition-all duration-300 whitespace-nowrap"
                             >
                               {copiedEmail ? "Copied!" : "Copy"}
                             </motion.button>
@@ -236,7 +236,7 @@ This message was sent from your portfolio contact form.`;
                 <h3 className="text-2xl font-bold mb-6 mt-10 text-center text-gray-300">
                   Connect With Me
                 </h3>
-                <div className="flex space-x-4 justify-center">
+                <div className="flex flex-wrap gap-4 justify-center">
                   {socialLinks.map((social, index) => (
                     <motion.a
                       key={social.label}
@@ -256,8 +256,8 @@ This message was sent from your portfolio contact form.`;
             </div>
 
             <motion.div variants={itemVariants} className="space-y-8">
-              <div className="bg-gray-900/80 backdrop-blur-xl rounded-3xl border border-white/10 p-8 shadow-2xl">
-                <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent text-center">
+              <div className="bg-gray-900/90 backdrop-blur-lg sm:backdrop-blur-xl rounded-3xl border border-white/10 p-5 sm:p-6 md:p-8 shadow-2xl">
+                <h2 className="text-3xl sm:text-4xl font-bold mb-8 bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent text-center">
                   Send Message
                 </h2>
 
@@ -277,7 +277,7 @@ This message was sent from your portfolio contact form.`;
                       value={formData.name}
                       onChange={handleInputChange}
                       required
-                      className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-white placeholder-gray-400 focus:outline-none focus:border-cyan-400/50 focus:bg-white/10 transition-all duration-300 backdrop-blur-sm"
+                      className="w-full bg-white/5 border border-white/10 rounded-2xl px-5 sm:px-6 py-4 text-white placeholder-gray-400 focus:outline-none focus:border-cyan-400/50 focus:bg-white/10 transition-all duration-300 backdrop-blur-sm"
                       placeholder="Enter your full name"
                     />
                   </motion.div>
@@ -297,7 +297,7 @@ This message was sent from your portfolio contact form.`;
                       value={formData.email}
                       onChange={handleInputChange}
                       required
-                      className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-white placeholder-gray-400 focus:outline-none focus:border-purple-400/50 focus:bg-white/10 transition-all duration-300 backdrop-blur-sm"
+                      className="w-full bg-white/5 border border-white/10 rounded-2xl px-5 sm:px-6 py-4 text-white placeholder-gray-400 focus:outline-none focus:border-purple-400/50 focus:bg-white/10 transition-all duration-300 backdrop-blur-sm"
                       placeholder="Enter your email address"
                     />
                   </motion.div>
@@ -316,7 +316,7 @@ This message was sent from your portfolio contact form.`;
                       name="phone"
                       value={formData.phone}
                       onChange={handleInputChange}
-                      className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-white placeholder-gray-400 focus:outline-none focus:border-green-400/50 focus:bg-white/10 transition-all duration-300 backdrop-blur-sm"
+                      className="w-full bg-white/5 border border-white/10 rounded-2xl px-5 sm:px-6 py-4 text-white placeholder-gray-400 focus:outline-none focus:border-green-400/50 focus:bg-white/10 transition-all duration-300 backdrop-blur-sm"
                       placeholder="Enter your phone number (optional)"
                     />
                   </motion.div>
@@ -336,7 +336,7 @@ This message was sent from your portfolio contact form.`;
                       onChange={handleInputChange}
                       required
                       rows="5"
-                      className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-white placeholder-gray-400 focus:outline-none focus:border-orange-400/50 focus:bg-white/10 transition-all duration-300 backdrop-blur-sm resize-none"
+                      className="w-full bg-white/5 border border-white/10 rounded-2xl px-5 sm:px-6 py-4 text-white placeholder-gray-400 focus:outline-none focus:border-orange-400/50 focus:bg-white/10 transition-all duration-300 backdrop-blur-sm resize-none"
                       placeholder="Tell me about your project or inquiry..."
                     />
                   </motion.div>
@@ -348,7 +348,7 @@ This message was sent from your portfolio contact form.`;
                     transition={{ delay: 0.6 }}
                     whileHover={{ scale: 1.05, y: -2 }}
                     whileTap={{ scale: 0.95 }}
-                    className="w-full bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-600 hover:to-purple-600 rounded-2xl py-5 px-8 text-white font-bold text-xl transition-all duration-300 shadow-2xl flex items-center justify-center space-x-4 group mt-6"
+                    className="w-full bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-600 hover:to-purple-600 rounded-2xl py-5 px-8 text-white font-bold text-lg sm:text-xl transition-all duration-300 shadow-2xl flex items-center justify-center space-x-4 group mt-6"
                   >
                     <motion.div
                       whileHover={{ rotate: 360 }}
@@ -369,11 +369,11 @@ This message was sent from your portfolio contact form.`;
             transition={{ delay: 0.8, duration: 0.8 }}
             className="text-center mt-16"
           >
-            <div className="bg-gradient-to-r from-cyan-500/10 via-purple-500/10 to-orange-500/10 backdrop-blur-xl rounded-3xl border border-white/10 p-8">
-              <h3 className="text-3xl font-bold mb-4 text-white">
+            <div className="bg-gradient-to-r from-cyan-500/10 via-purple-500/10 to-orange-500/10 backdrop-blur-lg sm:backdrop-blur-xl rounded-3xl border border-white/10 p-5 sm:p-6 md:p-8">
+              <h3 className="text-2xl sm:text-3xl font-bold mb-4 text-white">
                 Let's Build Something Amazing Together
               </h3>
-              <p className="text-gray-300 text-lg mb-6 max-w-2xl mx-auto">
+              <p className="text-gray-300 text-base sm:text-lg mb-6 max-w-2xl mx-auto px-2 sm:px-0">
                 Whether you have a project in mind or just want to say hello,
                 I'd love to hear from you. Let's turn your ideas into reality
                 with cutting-edge technology and stunning design.

@@ -190,92 +190,91 @@ const About = () => {
             </p>
           </motion.div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24 max-w-7xl mx-auto w-full">
             <div className="space-y-8">
               <motion.div
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.6 }}
-                className="bg-gray-900 backdrop-blur-xl rounded-3xl border border-white/10 p-8 shadow-2xl relative overflow-hidden min-h-[420px]"
+                className="bg-gray-900 backdrop-blur-xl rounded-3xl border border-white/10 p-6 sm:p-8 md:p-10 shadow-2xl relative overflow-hidden min-h-[400px] sm:min-h-[420px]"
               >
-                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-green-400/10 to-cyan-400/10 rounded-full blur-xl"></div>
-                <div className="absolute bottom-4 left-4 w-24 h-24 bg-gradient-to-tr from-green-400/5 to-cyan-400/5 rounded-full blur-lg"></div>
+                <div className="absolute top-0 right-0 w-24 sm:w-32 h-24 sm:h-32 bg-gradient-to-br from-green-400/10 to-cyan-400/10 rounded-full blur-xl"></div>
+                <div className="absolute bottom-4 left-4 w-20 sm:w-24 h-20 sm:h-24 bg-gradient-to-tr from-green-400/5 to-cyan-400/5 rounded-full blur-lg"></div>
 
-                <h3 className="text-2xl font-bold mb-8 bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent relative">
+                <h3 className="text-xl sm:text-2xl font-bold mb-6 sm:mb-8 bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent relative">
                   Personal Information
                 </h3>
 
-                <div className="space-y-6 relative z-10">
+                <div className="space-y-5 sm:space-y-6 relative z-10 text-sm sm:text-base">
                   <div className="group">
-                    <div className="flex items-center space-x-3 mb-2">
+                    <div className="flex items-center space-x-3 mb-1.5 sm:mb-2">
                       <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                      <div className="text-gray-400 text-sm font-medium">
+                      <div className="text-gray-400 text-xs sm:text-sm font-medium">
                         Name
                       </div>
                     </div>
-                    <div className="text-white font-semibold text-lg pl-5 border-l-2 border-green-400/30 hover:border-green-400 transition-all duration-300">
+                    <div className="text-white font-semibold pl-4 sm:pl-5 border-l-2 border-green-400/30 hover:border-green-400 transition-all duration-300">
                       Rajesh Elluru
                     </div>
                   </div>
 
                   <div className="group">
-                    <div className="flex items-center space-x-3 mb-2">
+                    <div className="flex items-center space-x-3 mb-1.5 sm:mb-2">
                       <div className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
-                      <div className="text-gray-400 text-sm font-medium">
+                      <div className="text-gray-400 text-xs sm:text-sm font-medium">
                         Email
                       </div>
                     </div>
-                    <div className="text-white font-semibold pl-5 border-l-2 border-cyan-400/30 hover:border-cyan-400 ">
+                    <div className="text-white font-semibold pl-4 sm:pl-5 border-l-2 border-cyan-400/30 hover:border-cyan-400">
                       rajeshelluru143@gmail.com
                     </div>
                   </div>
 
                   <div className="group">
-                    <div className="flex items-center space-x-3 mb-2">
+                    <div className="flex items-center space-x-3 mb-1.5 sm:mb-2">
                       <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
-                      <div className="text-gray-400 text-sm font-medium">
+                      <div className="text-gray-400 text-xs sm:text-sm font-medium">
                         Location
                       </div>
                     </div>
-                    <div className="text-white font-semibold pl-5 border-l-2 border-blue-400/30 hover:border-blue-400 transition-all duration-300">
+                    <div className="text-white font-semibold pl-4 sm:pl-5 border-l-2 border-blue-400/30 hover:border-blue-400 transition-all duration-300">
                       Nandyala, Andhra Pradesh, India
-                      <div className="text-gray-400 text-sm mt-1 flex items-center"></div>
                     </div>
                   </div>
 
                   <div className="group pt-2">
-                    <div className="flex items-center space-x-3 mb-2">
+                    <div className="flex items-center space-x-3 mb-1.5 sm:mb-2">
                       <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse"></div>
-                      <div className="text-gray-400 text-sm font-medium">
+                      <div className="text-gray-400 text-xs sm:text-sm font-medium">
                         Education
                       </div>
                     </div>
-                    <div className="text-white font-semibold pl-5 border-l-2 border-purple-400/30 hover:border-purple-400 transition-all duration-300">
+                    <div className="text-white font-semibold pl-4 sm:pl-5 border-l-2 border-purple-400/30 hover:border-purple-400 transition-all duration-300">
                       Bachelor's in Computer Science & Engineering (Data
                       Science)
                     </div>
                   </div>
-                  <div className="relative my-6">
+
+                  <div className="relative my-4 sm:my-6">
                     <div className="w-full border-t border-dotted border-gray-600/40"></div>
                   </div>
+
                   <div className="pt-1">
                     <motion.div
                       initial={{ scale: 0.9, opacity: 0 }}
                       whileInView={{ scale: 1, opacity: 1 }}
                       viewport={{ once: true }}
                       transition={{ delay: 0.3, duration: 0.5 }}
-                      className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 border border-cyan-400/40 rounded-2xl relative overflow-hidden group hover:border-cyan-400/60 transition-all duration-300"
+                      className="inline-flex items-center px-4 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 border border-cyan-400/40 rounded-2xl relative overflow-hidden group hover:border-cyan-400/60 transition-all duration-300"
                     >
                       <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 group-hover:from-cyan-500/15 group-hover:to-blue-500/15 transition-all duration-300"></div>
-                      <span className="text-cyan-300 font-semibold text-sm relative z-10">
+                      <span className="text-cyan-300 font-semibold text-xs sm:text-sm relative z-10">
                         Available for Full-time Opportunities
                       </span>
                     </motion.div>
                   </div>
                 </div>
-
-                <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-green-400 to-cyan-400 rounded-full mt-6"></div>
               </motion.div>
 
               <motion.div
@@ -283,20 +282,21 @@ const About = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="bg-gray-900  backdrop-blur-xl rounded-3xl border border-white/10 p-8 shadow-2xl"
+                className="bg-gray-900 backdrop-blur-xl rounded-3xl border border-white/10 p-6 sm:p-8 md:p-10 shadow-2xl"
               >
-                <h3 className="text-2xl font-bold mb-8 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent ">
+                <h3 className="text-xl sm:text-2xl font-bold mb-6 sm:mb-8 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
                   Education
                 </h3>
-                <div className="space-y-10">
+
+                <div className="space-y-8 sm:space-y-10 text-sm sm:text-base">
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.1 }}
-                    className="border-l-2 border-cyan-400 pl-4"
+                    className="border-l-2 border-cyan-400 pl-3 sm:pl-4"
                   >
-                    <div className="text-cyan-400 text-sm font-semibold">
+                    <div className="text-cyan-400 text-xs sm:text-sm font-semibold">
                       2024 - 2028
                     </div>
                     <div className="text-white font-bold">
@@ -308,14 +308,15 @@ const About = () => {
                       Science)
                     </div>
                   </motion.div>
+
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.2 }}
-                    className="border-l-2 border-blue-400 pl-4 "
+                    className="border-l-2 border-blue-400 pl-3 sm:pl-4"
                   >
-                    <div className="text-blue-400 text-sm font-semibold">
+                    <div className="text-blue-400 text-xs sm:text-sm font-semibold">
                       2022 - 2024
                     </div>
                     <div className="text-white font-bold">
@@ -323,14 +324,15 @@ const About = () => {
                     </div>
                     <div className="text-gray-400">Intermediate Education</div>
                   </motion.div>
+
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.3 }}
-                    className="border-l-2 border-green-400 pl-4"
+                    className="border-l-2 border-green-400 pl-3 sm:pl-4"
                   >
-                    <div className="text-green-400 text-sm font-semibold">
+                    <div className="text-green-400 text-xs sm:text-sm font-semibold">
                       2022
                     </div>
                     <div className="text-white font-bold">
@@ -350,9 +352,9 @@ const About = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.6 }}
-                className="bg-gray-900 backdrop-blur-xl rounded-3xl border border-white/10 p-8 shadow-2xl"
+                className="bg-gray-900 backdrop-blur-xl rounded-3xl border border-white/10 p-6 sm:p-8 md:p-10 shadow-2xl"
               >
-                <h3 className="text-2xl font-bold mb-8 bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent text-center">
+                <h3 className="text-xl sm:text-2xl font-bold mb-6 sm:mb-8 bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent text-center">
                   Technical Skills
                 </h3>
 
@@ -361,14 +363,14 @@ const About = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.1 }}
-                  className="flex space-x-2 mb-8 bg-white/5 rounded-2xl p-1"
+                  className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-8 bg-white/5 rounded-2xl p-2 sm:p-3"
                 >
                   {["frontend", "backend", "programming", "creative"].map(
                     (tab) => (
                       <button
                         key={tab}
                         onClick={() => setActiveTab(tab)}
-                        className={`flex-1 py-3 px-4 rounded-xl font-semibold text-sm transition-all duration-300 ${
+                        className={`flex-1 min-w-[100px] py-2 sm:py-3 px-3 sm:px-4 rounded-xl font-semibold text-xs sm:text-sm transition-all duration-300 ${
                           activeTab === tab
                             ? `${
                                 tab === "frontend"
@@ -388,7 +390,7 @@ const About = () => {
                   )}
                 </motion.div>
 
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-5">
                   {(activeTab === "frontend"
                     ? frontendSkills
                     : activeTab === "backend"
@@ -407,7 +409,7 @@ const About = () => {
                       className="relative group"
                     >
                       <div
-                        className={`bg-white/5 rounded-2xl p-4 backdrop-blur-sm border border-white/10 transition-all duration-300 cursor-pointer h-32 flex flex-col items-center justify-center text-center ${
+                        className={`bg-white/5 rounded-2xl p-3 sm:p-4 backdrop-blur-sm border border-white/10 transition-all duration-300 cursor-pointer h-28 sm:h-32 flex flex-col items-center justify-center text-center ${
                           activeTab === "frontend"
                             ? "hover:border-cyan-400/30"
                             : activeTab === "backend"
@@ -418,7 +420,7 @@ const About = () => {
                         }`}
                       >
                         <div
-                          className={`text-3xl mb-2 ${
+                          className={`text-2xl sm:text-3xl mb-2 ${
                             activeTab === "frontend"
                               ? "text-cyan-400"
                               : activeTab === "backend"
@@ -431,52 +433,9 @@ const About = () => {
                           {getSkillIcon(skill.name)}
                         </div>
 
-                        <span className="font-semibold text-gray-200 text-sm">
+                        <span className="font-semibold text-gray-200 text-xs sm:text-sm">
                           {skill.name}
                         </span>
-                      </div>
-
-                      <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 hidden group-hover:block z-10">
-                        <div
-                          className={`bg-gray-900 border rounded-lg p-3 shadow-2xl backdrop-blur-xl min-w-48 ${
-                            activeTab === "frontend"
-                              ? "border-cyan-400/30"
-                              : activeTab === "backend"
-                              ? "border-green-400/30"
-                              : activeTab === "programming"
-                              ? "border-yellow-400/30"
-                              : "border-purple-400/30"
-                          }`}
-                        >
-                          <div
-                            className={`font-semibold text-sm mb-1 ${
-                              activeTab === "frontend"
-                                ? "text-cyan-300"
-                                : activeTab === "backend"
-                                ? "text-green-300"
-                                : activeTab === "programming"
-                                ? "text-yellow-300"
-                                : "text-purple-300"
-                            }`}
-                          >
-                            {skill.name}
-                          </div>
-                          <div className="text-gray-300 text-xs">
-                            {getSkillDescription(skill.name)}
-                          </div>
-
-                          <div
-                            className={`absolute top-full left-1/2 transform -translate-x-1/2 border-8 border-transparent ${
-                              activeTab === "frontend"
-                                ? "border-t-cyan-400/30"
-                                : activeTab === "backend"
-                                ? "border-t-green-400/30"
-                                : activeTab === "programming"
-                                ? "border-t-yellow-400/30"
-                                : "border-t-purple-400/30"
-                            }`}
-                          ></div>
-                        </div>
                       </div>
                     </motion.div>
                   ))}
@@ -488,85 +447,69 @@ const About = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="bg-gray-900 backdrop-blur-xl rounded-3xl border border-white/10 p-8 shadow-2xl"
+                className="bg-gray-900 backdrop-blur-xl rounded-3xl border border-white/10 p-6 sm:p-8 md:p-10 shadow-2xl"
               >
-                <h3 className="text-2xl font-bold mb-6 bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent text-center">
+                <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent text-center">
                   My Passion
                 </h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.1 }}
-                    whileHover={{ scale: 1.05 }}
-                    className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 rounded-2xl p-4 text-center border border-cyan-400/20"
-                  >
-                    <div className="text-3xl mb-2">💻</div>
-                    <h4 className="font-bold text-cyan-300 mb-2">Clean Code</h4>
-                    <p className="text-gray-300 text-sm">
-                      Writing maintainable and scalable solutions
-                    </p>
-                  </motion.div>
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.2 }}
-                    whileHover={{ scale: 1.05 }}
-                    className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 rounded-2xl p-4 text-center border border-purple-400/20"
-                  >
-                    <div className="text-3xl mb-2">🎨</div>
-                    <h4 className="font-bold text-purple-300 mb-2">
-                      Beautiful UI
-                    </h4>
-                    <p className="text-gray-300 text-sm">
-                      Creating visually stunning interfaces
-                    </p>
-                  </motion.div>
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.3 }}
-                    whileHover={{ scale: 1.05 }}
-                    className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 rounded-2xl p-4 text-center border border-green-400/20"
-                  >
-                    <div className="text-3xl mb-2">🚀</div>
-                    <h4 className="font-bold text-green-300 mb-2">
-                      Innovation
-                    </h4>
-                    <p className="text-gray-300 text-sm">
-                      Pushing boundaries with new technologies
-                    </p>
-                  </motion.div>
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.4 }}
-                    whileHover={{ scale: 1.05 }}
-                    className="bg-gradient-to-br from-orange-500/10 to-red-500/10 rounded-2xl p-4 text-center border border-orange-400/20"
-                  >
-                    <div className="text-3xl mb-2">🤝</div>
-                    <h4 className="font-bold text-orange-300 mb-2">
-                      Collaboration
-                    </h4>
-                    <p className="text-gray-300 text-sm">
-                      Working together to achieve great results
-                    </p>
-                  </motion.div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+                  {[
+                    {
+                      icon: "💻",
+                      title: "Clean Code",
+                      color: "from-cyan-500/10 to-blue-500/10",
+                      border: "border-cyan-400/20",
+                    },
+                    {
+                      icon: "🎨",
+                      title: "Beautiful UI",
+                      color: "from-purple-500/10 to-pink-500/10",
+                      border: "border-purple-400/20",
+                    },
+                    {
+                      icon: "🚀",
+                      title: "Innovation",
+                      color: "from-green-500/10 to-emerald-500/10",
+                      border: "border-green-400/20",
+                    },
+                    {
+                      icon: "🤝",
+                      title: "Collaboration",
+                      color: "from-orange-500/10 to-red-500/10",
+                      border: "border-orange-400/20",
+                    },
+                  ].map((item, i) => (
+                    <motion.div
+                      key={i}
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 0.1 * i }}
+                      whileHover={{ scale: 1.05 }}
+                      className={`bg-gradient-to-br ${item.color} rounded-2xl p-3 sm:p-4 text-center border ${item.border}`}
+                    >
+                      <div className="text-2xl sm:text-3xl mb-1 sm:mb-2">
+                        {item.icon}
+                      </div>
+                      <h4 className="font-bold text-sm sm:text-base text-gray-200 mb-1 sm:mb-2">
+                        {item.title}
+                      </h4>
+                      <p className="text-gray-300 text-xs sm:text-sm">
+                        Creating meaningful digital experiences
+                      </p>
+                    </motion.div>
+                  ))}
                 </div>
                 <motion.p
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
-                  transition={{ delay: 0.6 }}
-                  className="text-center text-gray-300 mt-6 text-sm leading-relaxed"
+                  transition={{ delay: 0.5 }}
+                  className="text-center text-gray-300 mt-5 sm:mt-6 text-xs sm:text-sm leading-relaxed"
                 >
-                  I believe in the power of technology to transform ideas into
-                  reality. Every line of code is an opportunity to create
-                  something meaningful.
+                  I believe in using technology to turn ideas into reality.
+                  Every line of code is an opportunity to make something
+                  meaningful.
                 </motion.p>
               </motion.div>
             </div>

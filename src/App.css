@@ -32,9 +32,3 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-gray-400 dark:bg-gray-500;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap");
-.creative-font {
-  font-family: "Comfortaa", cursive;
-  letter-spacing: 1px;
-}
