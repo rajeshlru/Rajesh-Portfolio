@@ -41,11 +41,11 @@ const Projects = () => {
       id: 1,
       title: "FoodOrdering App",
       description:
-        "🍔 A dynamic food delivery platform built with React and Parcel, fetching real-time restaurant and menu data from Swiggy APIs. It offers a lightning-fast, seamless ordering experience with optimized routing, an intuitive shopping cart, and smooth state management — fully tested with Jest and React Testing Library.",
+        "🍔 A dynamic food delivery platform built with React and Parcel...",
       tech: ["React", "Parcel", "Swiggy API", "Jest", "RTL"],
       icons: [FaReact, FaBolt, SiJest],
       github: "https://github.com/rajeshlru/FoodOrderingApp",
-      live: "#",
+      live: "https://fodelivery.netlify.app/",
       color: "from-orange-500 to-red-500",
       accent: "orange",
       features: [
@@ -63,11 +63,11 @@ const Projects = () => {
       id: 2,
       title: "Movies GPT",
       description:
-        "🎬 Movies-GPT – A Netflix-style web app to discover, watch, and get AI-powered movie recommendations. Built with TMDB API, Firebase, and Gemini AI, featuring search debouncing for fast, optimized results. Enjoy a seamless, intelligent, and personalized movie experience like never before.",
+        "🎬 Movies-GPT – A Netflix-style web app to discover, watch, and get AI-powered movie recommendations...",
       tech: ["React", "TMDB API", "Firebase", "Gemini AI", "Tailwind"],
       icons: [FaFilm, SiFirebase, SiGoogle, SiTailwindcss],
       github: "https://github.com/rajeshlru/Movies-GPT",
-      live: "#",
+      live: "https://mymovies-gpt.netlify.app/",
       color: "from-purple-500 to-pink-500",
       accent: "purple",
       features: [
@@ -85,11 +85,11 @@ const Projects = () => {
       id: 3,
       title: "My YouTube",
       description:
-        "📺 Not your average YouTube clone! A fully functional YouTube clone built with React JS & Tailwind — features real-time search with debouncing, live chat using API polling, and nested comments. Powered by the YouTube Data API.",
+        "📺 Not your average YouTube clone! A fully functional YouTube clone built with React JS & Tailwind...",
       tech: ["React", "Tailwind", "YouTube API", "Real-time Chat"],
       icons: [FaYoutube, SiTailwindcss, FaBolt, FaCode],
       github: "https://github.com/rajeshlru/My-Youtube",
-      live: "#",
+      live: "https://my-youtube.vercel.app/",
       color: "from-red-500 to-red-700",
       accent: "red",
       features: [
@@ -107,11 +107,11 @@ const Projects = () => {
       id: 4,
       title: "DevTinder Backend",
       description:
-        "🚀 The powerful, scalable, and secure backend engine that fuels the DevTinder platform. Built with Node.js & Express. A robust, RESTful API server that handles everything from user authentication and profile management to the core 'swipe' logic and real-time matching system.",
+        "🚀 The powerful, scalable, and secure backend engine that fuels the DevTinder platform...",
       tech: ["Node.js", "Express", "MongoDB", "JWT", "REST API"],
       icons: [FaNodeJs, SiExpress, SiMongodb, FaShieldAlt],
       github: "https://github.com/rajeshlru/Devtinder-Backend",
-      live: "#",
+      live: "https://devtinder-backend-bh5g.onrender.com/",
       color: "from-green-500 to-emerald-500",
       accent: "green",
       features: [
@@ -129,11 +129,11 @@ const Projects = () => {
       id: 5,
       title: "DevTinder Frontend",
       description:
-        "🎯 DevTinder – A Tinder-style web app for developers to connect, chat, and match based on skills and interests. Built with React, Redux, Tailwind CSS, and Axios, featuring swipe cards, real-time chat, and responsive design.",
+        "🎯 DevTinder – A Tinder-style web app for developers to connect, chat, and match based on skills and interests...",
       tech: ["React", "Redux", "Tailwind", "Axios", "WebSockets"],
       icons: [FaReact, SiRedux, SiTailwindcss, FaMobileAlt],
       github: "https://github.com/rajeshlru/DevTinder-Frontend",
-      live: "#",
+      live: "https://tinder-devs.netlify.app/",
       color: "from-blue-500 to-cyan-500",
       accent: "blue",
       features: ["Swipe Cards", "Real-time Chat", "Redux State", "Responsive"],
