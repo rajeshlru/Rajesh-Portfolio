@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import {
   FaHeart,
   FaGithub,
@@ -57,9 +58,9 @@ const Footer = () => {
 
   const quickLinks = [
     { name: "Home", href: "/" },
-    { name: "About", href: "about" },
-    { name: "Projects", href: "projects" },
-    { name: "Contact", href: "contact" },
+    { name: "About", href: "/about" },
+    { name: "Projects", href: "/projects" },
+    { name: "Contact", href: "/contact" },
   ];
 
   const containerVariants = {
@@ -160,13 +161,14 @@ const Footer = () => {
               <ul className="space-y-3">
                 {quickLinks.map((link, index) => (
                   <motion.li key={link.name} whileHover={{ x: 5 }}>
-                    <a
-                      href={link.href}
+                    <Link
+                      to={link.href}
                       className="text-gray-300 hover:text-cyan-400 transition-all duration-300 flex items-center space-x-2 group"
+                      onClick={() => window.scrollTo(0, 0)} // Scroll to top on click
                     >
                       <div className="w-2 h-2 bg-cyan-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       <span>{link.name}</span>
-                    </a>
+                    </Link>
                   </motion.li>
                 ))}
               </ul>
