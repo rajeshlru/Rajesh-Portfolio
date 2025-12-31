@@ -323,7 +323,7 @@ const PortfolioIntro = ({ onIntroComplete }) => {
               />
 
               <motion.p
-                className="text-lg md:text-xl md:mt-32 text-white/60 mb-8 font-light"
+                className="text-lg md:text-xl mt-40 md:mt-32 text-white/60 mb-8 font-light"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1.5, duration: 0.8 }}

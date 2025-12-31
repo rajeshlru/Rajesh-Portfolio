@@ -4,6 +4,7 @@ import About from "./About";
 import Projects from "./Projects";
 import Achievements from "./Achievements";
 import Contact from "./Contact";
+import portfolioImg from "../assets/profile.jpg/myPortfolio.jpeg";
 
 const Home = () => {
   return (
@@ -62,7 +63,7 @@ const Home = () => {
 
                       <div className="relative rounded-full overflow-hidden">
                         <img
-                          src="https://media.licdn.com/dms/image/v2/D4E03AQE0ygsSZV0J0g/profile-displayphoto-crop_800_800/B4EZo.Lkq3HEAM-/0/1761979813369?e=1763596800&v=beta&t=13JT5bLOqVHx9cWCkMqvHGW5BhXzhGEG5trqKK8rwdw"
+                          src={portfolioImg}
                           alt="Rajesh Elluru"
                           className="w-80 h-80 rounded-full lg:w-96 lg:h-96 object-cover shadow-2xl border border-white/5 group-hover:border-cyan-200/20 transition-all duration-500 transform group-hover:scale-105"
                         />
